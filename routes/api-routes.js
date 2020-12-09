@@ -36,7 +36,6 @@ router.post("/api/workouts", (req, res) => {
 router.put("/api/workouts/:id", async (req, res) => {
   const id = req.params.id;
   const body = req.body;
-  console.log(body);
   db.Workout.updateOne(
     { _id: id },
     {

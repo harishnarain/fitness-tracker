@@ -44,21 +44,26 @@ function isRequired(field) {
   };
 }
 
-const workoutSchema = new Schema({
-  day: {
-    type: Date,
-    default: Date.now,
+const workoutSchema = new Schema(
+  {
+    day: {
+      type: Date,
+      default: Date.now,
+    },
+    exercises: [exerciseSchema],
   },
-  exercises: [exerciseSchema],
-  totalDuration: Number,
-});
+  {
+    toObject: { virtuals: true },
+    toJSON: { virtuals: true },
+  }
+);
 
-workoutSchema.post("save", function () {
+workoutSchema.virtual("totalDuration").get(function () {
   let totalDuration = 0;
   this.exercises.forEach((el) => {
     totalDuration += el.duration;
   });
-  this.totalDuration = totalDuration;
+  return totalDuration;
 });
 
 const Workout = mongoose.model("Workout", workoutSchema);
