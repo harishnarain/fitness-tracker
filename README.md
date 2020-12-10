@@ -18,7 +18,7 @@ For this assignment, the app is a fitness tracker.  The fitness tracker allows t
 1. Clone this GitHub repository
 
    ```
-   git@github.com:harishnarain/employee-tracker.git
+   git@github.com:harishnarain/fitness-tracker.git
    ```
 
 2. Install all dependent npm packages
@@ -56,19 +56,19 @@ Pull requests are welcome
 ## Screenshots
 **Home Page**
 
-![home](https://github.com/harishnarain/employee-tracker/blob/main/home.png?raw=true)
+![home](https://github.com/harishnarain/fitness-tracker/blob/main/home.png?raw=true)
 
 **New Workout**
 
-![newworkout](https://github.com/harishnarain/employee-tracker/blob/main/new_workout.png?raw=true)
+![newworkout](https://github.com/harishnarain/fitness-tracker/blob/main/new_workout.png?raw=true)
 
 **Add Exercise**
 
-![addexercise](https://github.com/harishnarain/employee-tracker/blob/main/add_exercise.png?raw=true)
+![addexercise](https://github.com/harishnarain/fitness-tracker/blob/main/add_exercise.png?raw=true)
 
 **Stats**
 
-![stats](https://github.com/harishnarain/employee-tracker/blob/main/stats.png?raw=true)
+![stats](https://github.com/harishnarain/fitness-tracker/blob/main/stats.png?raw=true)
 
 ## Questions
 Checkout my GitHub [profile](https://github.com/harishnarain)
